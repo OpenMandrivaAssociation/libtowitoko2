@@ -44,7 +44,9 @@ mkdir -p %{buildroot}%{_sysconfdir}/reader.conf.d
 install -m 0644 %{SOURCE1} %{buildroot}%{_sysconfdir}/reader.conf.d/
 
 %post
+%if %mdkversion < 200900
 /sbin/ldconfig
+%endif
 %{_sbindir}/update-reader.conf
 if [ "$1" -eq "1" ]; then
 	echo
@@ -53,7 +55,9 @@ if [ "$1" -eq "1" ]; then
 fi
 
 %postun
+%if %mdkversion < 200900
 /sbin/ldconfig
+%endif
 %{_sbindir}/update-reader.conf
 
 %clean
