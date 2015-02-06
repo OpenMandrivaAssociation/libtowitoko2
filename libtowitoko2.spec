@@ -5,7 +5,7 @@
 Summary: CT-API and PCSC-Lite driver for Towitoko smart card readers
 Name: %{libname}
 Version: 2.0.7
-Release: 8
+Release: 9
 License: GPL
 Group: System/Libraries
 Source0: http://www.geocities.com/cprados/files/%{tarball_name}-%{version}.tar.gz
