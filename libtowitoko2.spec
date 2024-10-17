@@ -10,7 +10,7 @@ License: GPL
 Group: System/Libraries
 Source0: http://www.geocities.com/cprados/files/%{tarball_name}-%{version}.tar.gz
 Source1: towitoko.conf
-URL: http://www.geocities.com/cprados/
+URL: https://www.geocities.com/cprados/
 Requires(post): pcsc-lite
 
 %description
