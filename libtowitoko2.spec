@@ -13,6 +13,11 @@ Source1: towitoko.conf
 URL: https://www.geocities.com/cprados/
 Requires(post): pcsc-lite
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 This library provides a driver for using Towitoko smartcard readers under UNIX
 environment.
